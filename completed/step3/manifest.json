@@ -1,0 +1,8 @@
+{
+  "name": "Push Notifications codelab",
+  "short_name": "Push",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "gcm_sender_id": "593836075156",
+  "permissions": ["gcm"]
+}
