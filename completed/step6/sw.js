@@ -15,15 +15,13 @@ self.addEventListener('push', function(event) {
   console.log('Push message', event);
 
   var title = 'Push message';
-  var body = 'Push message received';
-  var icon = 'images/icon.png';
-  var tag = 'my-tag';
 
   event.waitUntil(
     self.registration.showNotification(title, {
-       body: body,
-       icon: icon
-       tag: tag
-     })
-   );
+     body: 'Push message received',
+     icon: 'images/icon.png',
+     tag: 'my-tag'
+   }));
 });
+
+
