@@ -18,10 +18,7 @@ self.addEventListener('push', function(event) {
 
   event.waitUntil(
     self.registration.showNotification(title, {
-     body: 'Push message received',
-     icon: 'images/icon.png',
-     tag: 'my-tag'
+     body: 'The Message',
+     icon: 'images/icon.png'
    }));
 });
-
-
