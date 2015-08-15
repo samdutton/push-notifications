@@ -39,10 +39,10 @@ function subscribe() {
 function unsubscribe() {
   sub.unsubscribe().then(function(event) {
     subscribeButton.textContent = 'Subscribe';
-    console.log('Unubscribed!', event);
+    console.log('Unsubscribed!', event);
     isSubscribed = false;
   }).catch(function(error) {
-    console.log('Unsubscription error', error);
-    subscribeButton.textContent = 'Unsubscribe';
+    console.log('Error unsubscribing', error);
+    subscribeButton.textContent = 'Subscribe';
   });
 }
